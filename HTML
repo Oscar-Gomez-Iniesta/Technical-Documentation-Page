@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="freeCodeCamp Technical Documentation Page Certification Project" />
+    <title>Basic CSS Documentation Page</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+
+    <!-- Barra de navegación -->
+
+    <nav id="navbar">
+      <header>Basic CSS Documentation</header>
+      <a class="nav-link" href="#Introduction_to_CSS">Introduction to CSS</a>
+      <a class="nav-link" href="#CSS_Selectors">CSS Selectors</a>
+      <a class="nav-link" href="#CSS_Styles">CSS Styles</a>
+      <a class="nav-link" href="#CSS_Box_Model">CSS Box Model</a>
+      <a class="nav-link" href="#CSS_Layout">CSS Layout</a>
+    </nav>
+
+  <!-- Documento principal -->
+
+    <main id="main-doc">
+
+      <!-- Primera sección // Intoducción -->
+
+      <section class="main-section" id="Introduction_to_CSS">
+        <header>Introduction to CSS</header>
+        <p>CSS stands for Cascading Style Sheets and is commonly used for styling and layout of web pages. In more detail, CSS is a stylesheet language used to describe the look and formatting of a document written in HTML.</p>
+        <p>CSS presents various advantages allowing you to control the appearance and layout of multiple web pages at once by separating the presentation of a document from its content. It also empowers you to style your HTML elements in a variety of ways, such as setting background colors, font styles, element sizes, and positioning.</p>
+        <p>With CSS, you can create visually appealing websites that are both user-friendly and accessible to a wide range of devices, including desktops, tablets, and smartphones.</p>
+        <div class="code first"><code>h2 {     
+  font-size: 1.5em; 
+}</code></div>
+        <p>In the example above, we are setting the font size of all h2 elements to 1.5em.</p>
+        <p>Briefly:</p>
+        <ul>
+          <li>CSS can be written in separate files or within the HTML document itself.</li>
+          <li>CSS can be used to style any HTML element in multiple ways.</li>
+          <li>CSS helps keep the presentation and content of a website separate.</li>
+        </ul>
+      </section>
+
+      <!-- Segunda sección // Selectores -->
+
+      <section class="main-section" id="CSS_Selectors">
+        <header>CSS Selectors</header>
+          <p>CSS selectors are used to select specific HTML elements and apply styles to them. There are several types of CSS selectors including:</p>
+          <ul>
+            <li><b>Element selectors:</b> Select elements based on their HTML tag, such as p, h1, or div.</li>
+            <li><b>Class selectors:</b> Select elements based on their class attribute, such as .highlight or .container.</li>
+            <li><b>Id selectors:</b> Select elements based on their id attribute, such as #header or #footer.</li>
+            <li><b>Attribute selectors:</b> Select elements based on their attributes and attribute values, such as [type="radio"] or [src^="https://"].</li>
+          </ul>
+          <div class="code second"><code>.highlight {
+  background-color: yellow;
+}</code></div>
+          <p>In the example above, we are selecting all elements with the class of "highlight" and setting their background color to yellow.</p>
+        <p>Briefly:</p>
+          <ul>
+            <li>CSS selectors are used to select and style specific HTML elements on a page.</li>
+            <li>CSS selectors can be combined to target specific elements in more complex ways.</li>
+          </ul>
+        </section>
+
+<!-- Tercera Sección // Estilos -->
+
+        <section class="main-section" id="CSS_Styles">
+          <header>CSS Styles</header>
+            <p>CSS styles are used to control the appearance of HTML elements. There are many CSS properties that you can use to style your elements, such as:</p>
+              <ul>
+                <li><b>background-color:</b> sets the background color of an element.</li>
+                <li><b>color:</b> sets the text color of an element.</li>
+                <li><b>font-size:</b> sets the font size of an element.</li>
+                <li><b>width:</b> sets the width of an element.</li>
+                <li><b>height:</b> sets the height of an element.</li>
+              </ul>
+              <div class="code third"><code>p {
+  color: blue;
+  font-size: 1.2em;
+}</code></div>
+              <p>In the example above, we are selecting all "p" elements and setting their text color to blue and font size to 1.2em.</p>
+              <p>Briefly:</p>
+              <ul>
+                <li>CSS styles are used to control the look and formatting of HTML elements.</li>
+                <li>There are many CSS properties available to style elements in a variety of ways.</li>
+              </ul>
+            </section>
+
+<!-- Cuarta sección // Modelo de cajas -->
+
+            <section class="main-section" id="CSS_Box_Model">
+              <header>CSS Box Model</header>
+              <p>The CSS box model is a rectangular layout used to calculate the size of elements on a web page. It consists of the content area, padding, borders, and margins:</p>
+              <ul>
+                <li><b>Content area:</b> This is the area inside an element where the content is displayed.</li>
+                <li><b>Padding:</b> This is the space between the content area and the border of an element.</li>
+                <li><b>Border:</b> This is the line surrounding the content area and padding of an element.</li>
+                <li><b>Margin:</b> This is the space outside the border of an element and other elements on the page.</li>
+              </ul>
+              <div class="code fourth"><code>div {
+  width: 300px;
+  height: 200px;
+  padding: 20px;
+  border: 1px solid black;
+  margin: 30px;
+}</code></div>
+              <p>In the example above, we are creating a "div" element with a width of 300px, height of 200px, 20px padding, 1px solid black border, and 30px margin.</p>
+              <p>Briefly:</p>
+              <ul>
+                <li>The CSS box model is used to calculate the size of elements on a web page.</li>
+                <li>It consists of the content area, padding, borders, and margins.</li>
+              </ul>
+            </section>
+
+<!-- Quinta sección // Diseño -->
+
+            <section class="main-section" id="CSS_Layout">
+              <header>CSS Layout</header>
+              <p>CSS layout refers to the way in which HTML elements are arranged on a web page. There are several layout techniques that can be used in CSS, including:</p>
+              <ul>
+                <li><b>Floats:</b> allows elements to be floated to the left or right of the page, causing other elements to wrap around them.</li>
+                <li><b>Flexbox:</b> provides a flexible layout system that can handle elements of different sizes and allows for easy reordering of elements within the layout.</li>
+                <li><b>Grid:</b> provides a two-dimensional layout system that allows elements to be arranged in rows and columns.</li>
+                <li><b>Absolute positioning:</b> allows elements to be positioned relative to the nearest positioned ancestor, rather than the viewport or the normal flow of the document.</li>
+              </ul>
+              <p>It's important to choose the right layout technique for your web page to ensure that it looks good and functions well on different devices and screen sizes.</p>
+              <div class="code fifth"><code>.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}</code></div>
+              <p>In the example above, we are using the flexbox layout technique to center the elements within the container class and space them out evenly.</p>
+              <p>Briefly:</p>
+              <ul>
+                <li>CSS layout is used to control the arrangement of HTML elements on a web page.</li>
+                <li>Different layout techniques are suited to different types of web pages and design requirements.</li>
+                <li>It's important to choose the right layout technique for your web page to ensure that it looks good and functions well on different devices and screen sizes.</li>
+              </ul>
+            </section>
+        </main>
+    </body>
+</html>
